@@ -181,21 +181,86 @@ h4 {
 .main-navigation {
   background-color: #fff8ef;
 }
+
+ul {
+  list-style: none;
+}
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav-logo-link {
+
+.nav-ul-link ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.4rem;
+  gap: 4rem;
+}
+.nav-ul-link a {
+  display: inline-block;
+  text-decoration: none;
+  color: #17120f;
+  font-size: 1.4rem;
+  /* this line creates a space  between the navigation text and the border*/
+  padding-bottom: 1rem;
+
+  /* Transistion properties */
+  transition:
+    border-bottom 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+.nav-ul-link a:hover {
+  border-bottom: 2px solid #f5a900;
+  color: gray;
+  transform: translateY(-3px);
+}
+.reusuable-icon {
+  font-size: 1.6rem;
+  color: #17120f;
+  cursor: pointer;
+}
+.reusuable-icon:hover {
+  color: gray;
+  transform: scale(1.1);
+}
+/* =============nav-icon-btn============= */
+.nav-icon-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+/* .logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+} */
+
+.nav-icon a {
+  display: inline-block;
+  text-decoration: none;
+  color: #17120f;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  background-color: #f5a900;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  /* Transistion properties */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
-.nav-logo-link ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.nav-icon a:hover {
+  background-color: #e9d09c;
+  color: gray;
+  transform: translateY(-3px);
+  font-size: 1.4rem;
 }
 
 /* ============================== */
